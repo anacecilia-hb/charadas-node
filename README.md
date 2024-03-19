@@ -18,14 +18,30 @@
   
   Ao explorar nossas charadas, você não apenas desafiará sua mente, mas também aprenderá conceitos fundamentais de Node.js enquanto se diverte. Quer você seja um iniciante curioso ou um 
   desenvolvedor experiente em busca de uma maneira diferente de praticar suas habilidades, nossa página de charadas oferece algo para todos.
+  
   <br>
-    **OBS: Alguns arquivos terão comentários explicativos sobre uma linha ou um bloco, para ser fácil a compreensão do código.**
+  
+ **💡: Alguns arquivos terão comentários explicativos sobre uma linha ou um bloco, para ser fácil a compreensão do código.**
+
+</p>
+
+<hr>
+
+<h3>
+  EDITOR DE CÓDIGO 💻
+</h3>
+
+<p>
+  Visual Studio Code
+  <a href="https://code.visualstudio.com/">
+    Acesse nesse link
+  </a>
 </p>
 
 <hr>
   
 <h3>
-  BIBLIOTECAS USADAS 🗃️
+  BIBLIOTECAS 🗃️
 </h3>
 
 <ul>
@@ -95,18 +111,23 @@
 </h3>
 
 <p>
+  Nas Extensões do VSCode pesquise por MySQL, instale e configure seu banco de dados local.
+  <br>
+  <br>
+  <a href="https://github.com/anacecilia-hb/charadas-node">
+    <img height="100em" src="db_usado.png" alt="database-mysql">
+  </a>
 
-  **BD USADO:**
-  
-  **BOTAR FOTO**
-
-  Mais informações estarão no seguinte caminho de pastas:
-  
-  >database/charadas.sql
-  
   Para fazer conexão com o seu banco apenas troque as informações em:
   
   >database/database.js
   
-  Não esqueça de fazer as possíveis alterações referente ao banco nos outro arquivos 😉
+  Mais informações estarão no seguinte caminho de pastas:
+  
+  >database/charadas.sql
+
+  <br>
+  
+  **💡: Não esqueça de fazer as possíveis alterações, referente ao banco, nos outros arquivos.**
+  
 </p>
