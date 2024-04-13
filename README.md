@@ -151,7 +151,7 @@
   <br>
   <br>
   <a href="https://github.com/anacecilia-hb/charadas-node">
-    <img height="100em" src="ext_database/db_usado.png" alt="database-mysql">
+    <img height="100em" src="extensao_database/db_usado.png" alt="database-mysql">
   </a>
 
   Para fazer conexão com o seu banco apenas troque as informações em:
