@@ -1,61 +1,66 @@
 <%- include('partials/header.ejs') %>
-    <body>
-        <%- include('partials/navbar.ejs')%>
+<body>
+  <%- include('partials/navbar.ejs')%>
 
-        <script src="/js/selectSearch.js"></script>
+  <script src="/js/selectSearch.js"></script>
 
-        <div class="container">
+  <div class="container">
+    <h3>CHARADAS COM RESPOSTAS</h3>
+    <p>
+      Bem-vindo ao nosso incrível site de charadas! Aqui, você encontrará um
+      <strong>pequeno universo de diversão e aprendizado</strong>, repleto de
+      enigmas inteligentes e divertidos. Nossa página de charadas tem como
+      objetivo introduzir você ao incrível mundo do desenvolvimento web e
+      mostrar como a linguagem Node.js pode ser empregada de maneira prática e
+      divertida. Prepare-se para mergulhar em um mundo de enigmas intrigantes e
+      desafios estimulantes.
+      <br />
+      <strong
+        >Explore, divirta-se e, acima de tudo, aprenda enquanto desvenda os
+        mistérios das nossas charadas!</strong
+      >
+      <br />
+      Mais detalhes sobre o projeto confira no link
+      <a
+        href="https://github.com/anacecilia-hb/charadas-node"
+        target="”_blank”"
+      >
+        projeto
+      </a>
+      .
+    </p>
+    <hr />
+    <div>
+      <label>Procure por:</label>
+      <select id="procureCha">
+        <option value="recentes">Mais Recentes</option>
+        <option value="antigos">Mais Antigas</option>
+      </select>
+      <button class="btn btn-light" onclick="ordenarCharadas()" id="btnOrder">
+        Ordenar
+      </button>
+    </div>
 
-            <h3>CHARADAS COM RESPOSTAS</h3>
-            <p>
-                Bem-vindo ao nosso incrível site de charadas! Aqui, você encontrará um <strong>pequeno 
-                universo de diversão e aprendizado</strong>, repleto de enigmas inteligentes e divertidos.
-                Nossa página de charadas tem como objetivo introduzir você ao incrível mundo do 
-                desenvolvimento web e mostrar como a linguagem Node.js pode ser empregada de maneira 
-                prática e divertida. Prepare-se para mergulhar em um mundo de enigmas intrigantes e 
-                desafios estimulantes.
-                <br>
-                <strong>Explore, divirta-se e, acima de tudo, aprenda enquanto desvenda 
-                os mistérios das nossas charadas!</strong>
-                <br>
-                Mais detalhes sobre o projeto confira no link 
-                <a href="https://github.com/anacecilia-hb/charadas-node" target=”_blank”>
-                    projeto
-                </a>
-                .                
-            </p>
-            <hr>
-            <div>
-                <label>Procure por:</label>
-                    <select id="procureCha">
-                        <option value="recentes">Mais Recentes</option>
-                        <option value="antigos">Mais Antigas</option>
-                    </select>
-                    <button class="btn btn-light" onclick="ordenarCharadas()" id="btnOrder">Ordenar</button>
-            </div>
+    <% perguntas.forEach(pergunta => { %>
+    <br />
+    <div class="card">
+      <div class="card-body" id="cd-In">
+        <strong>
+          <a href="/pergunta/<%= pergunta.id %>" id="title-In">
+            <%= pergunta.titulo %>
+          </a>
+        </strong>
 
-            
-            <% perguntas.forEach(pergunta => { %>
-                <br>
-                <div class="card">
-                    <div class="card-body" id="cd-In">
-                        <strong>
-                            <a href="/pergunta/<%= pergunta.id %>" id="title-In"> 
-                                <%= pergunta.titulo %> 
-                            </a>
-                        </strong>
-                        
-                        <h5> <%= pergunta.descricao %> </h5>
-                    </div>
-                    <div class="card-footer" id="cf-In">
-                        <a href="/pergunta/<%= pergunta.id %>">
-                            <button class="btn btn-light">VER RESPOSTA</button>
-                        </a>
-                    </div>
-                </div>
-            <% }) %>
-        
-        </div>
-        <%- include('partials/rodape.ejs') %>
-    </body>
+        <h5><%= pergunta.descricao %></h5>
+      </div>
+      <div class="card-footer" id="cf-In">
+        <a href="/pergunta/<%= pergunta.id %>">
+          <button class="btn btn-light">VER RESPOSTA</button>
+        </a>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+  <%- include('partials/rodape.ejs') %>
+</body>
 <%- include('partials/footer.ejs') %>

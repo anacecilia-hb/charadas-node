@@ -1,33 +1,30 @@
 <%- include('partials/header.ejs') %>
 <body>
-    
-    <%- include('partials/navbar.ejs') %>
-    
-    
-    <div class="container">
-        <h3>Categorias</h3>
-        <hr>
-        
-            <h5>
-                <li>
-                    <a href="/categorias/<%= categoria.id %>" id="link-CRE">
-                        <%= categoria.titulo %>
-                    </a>
-                </li>
-            </h5>
-            <% pergunta.forEach(pergunta => { %>
-                <h6>
-                    <a href="/pergunta/<%= pergunta.id %>" class="catR-P"><%= pergunta.titulo %></a>
-                </h6>
-            <% }) %>
-            <hr>
-            <strong>
-                <a href="/categorias" class="voltar-P">← Voltar</a>
-            </strong>
-    </div>
-    <%- include('partials/rodape.ejs') %>
+  <%- include('partials/navbar.ejs') %>
+
+  <div class="container">
+    <h3>Categorias</h3>
+    <hr />
+
+    <h5>
+      <li>
+        <a href="/categorias/<%= categoria.id %>" id="link-CRE">
+          <%= categoria.titulo %>
+        </a>
+      </li>
+    </h5>
+    <% pergunta.forEach(pergunta => { %>
+    <h6>
+      <a href="/pergunta/<%= pergunta.id %>" class="catR-P"
+        ><%= pergunta.titulo %></a
+      >
+    </h6>
+    <% }) %>
+    <hr />
+    <strong>
+      <a href="/categorias" class="voltar-P">← Voltar</a>
+    </strong>
+  </div>
+  <%- include('partials/rodape.ejs') %>
 </body>
 <%- include('partials/footer.ejs') %>
-
-
-
