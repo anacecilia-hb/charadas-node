@@ -23,6 +23,7 @@
   
  **💡: Alguns arquivos terão comentários explicativos sobre uma linha ou um bloco, para ser fácil a compreensão do código.**
 
+**⚠️: Caso haja alguma alteração o README será atualizado.**
 </p>
 
 <hr>
