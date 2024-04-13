@@ -41,28 +41,51 @@
 <hr>
   
 <h3>
-  BIBLIOTECAS 🗃️
+  BIBLIOTECAS E FRAMEWORKS🗃️
 </h3>
 
 <ul>
-  <a href="https://code.visualstudio.com/">
-     <li>body-parser</li>
-  </a>
-  <a href="https://code.visualstudio.com/">
-    <li>ejs</li>
-  </a>
-  <a href="https://code.visualstudio.com/">
-    <li>express</li>
-  </a>
-  <a href="https://code.visualstudio.com/">
-    <li>mysql2</li>
-  </a>
-  <a href="https://code.visualstudio.com/">
-    <li>nodemon</li>
-  </a>
-  <a href="https://code.visualstudio.com/">
-    <li>sequelize</li>
-  </a>
+  <li>
+    <a href="https://www.npmjs.com/package/body-parser">
+       body-parser
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://ejs.co/">
+       ejs
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://expressjs.com/">
+       express
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.npmjs.com/package/mysql2">
+       mysql2
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.npmjs.com/package/nodemon">
+       nodemon
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://sequelize.org/">
+       sequelize
+    </a>
+  </li>
+
+  <li>
+    <a href="https://getbootstrap.com/">
+       bootstrap 5
+    </a>
+  </li>
 </ul>
 
 <p>
@@ -127,16 +150,16 @@
   <br>
   <br>
   <a href="https://github.com/anacecilia-hb/charadas-node">
-    <img height="100em" src="db_usado.png" alt="database-mysql">
+    <img height="100em" src="ext_database/db_usado.png" alt="database-mysql">
   </a>
 
   Para fazer conexão com o seu banco apenas troque as informações em:
   
-  >database/database.js
+  > 📁 charadas-node/database/database.js
   
   Mais informações estarão no seguinte caminho de pastas:
   
-  >database/charadas.sql
+  > 📁 charadas-node/database/charadas.sql
 
   <br>
   
