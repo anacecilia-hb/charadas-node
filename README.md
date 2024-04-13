@@ -33,7 +33,7 @@
 
 <p>
   Visual Studio Code
-  <a href="https://code.visualstudio.com/" target="_blank">
+  <a href="https://code.visualstudio.com/">
     Acesse nesse link
   </a>
 </p>
@@ -45,12 +45,24 @@
 </h3>
 
 <ul>
-  <li>body-parser</li>
-  <li>ejs</li>
-  <li>express</li>
-  <li>mysql2</li>
-  <li>nodemon</li>
-  <li>sequelize</li>
+  <a href="https://code.visualstudio.com/">
+     <li>body-parser</li>
+  </a>
+  <a href="https://code.visualstudio.com/">
+    <li>ejs</li>
+  </a>
+  <a href="https://code.visualstudio.com/">
+    <li>express</li>
+  </a>
+  <a href="https://code.visualstudio.com/">
+    <li>mysql2</li>
+  </a>
+  <a href="https://code.visualstudio.com/">
+    <li>nodemon</li>
+  </a>
+  <a href="https://code.visualstudio.com/">
+    <li>sequelize</li>
+  </a>
 </ul>
 
 <p>
