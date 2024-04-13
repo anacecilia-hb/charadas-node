@@ -1,0 +1,34 @@
+<%- include('partials/header.ejs') %>
+<body>
+    
+    <%- include('partials/navbar.ejs') %>
+
+    <div>
+        <strong>
+            <a href="/" class="voltar-P">← Voltar</a>
+        </strong>
+    </div>
+    
+    
+    <div class="container">
+
+        <h3>Categorias</h3>
+        <hr>
+
+        <% categorias.forEach(categoria => { %>
+            <h5>
+                <li>
+                    <a href="/categorias/<%= categoria.id %>" id="link-CE">
+                        <%= categoria.titulo %>
+                    </a>
+                </li>
+            </h5>
+        <% }) %>
+    </div>
+
+    <%- include('partials/rodape.ejs') %>
+</body>
+<%- include('partials/footer.ejs') %>
+
+
+
