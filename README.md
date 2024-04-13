@@ -33,7 +33,7 @@
 
 <p>
   Visual Studio Code
-  <a href="https://code.visualstudio.com/" target="blank">
+  <a href="https://code.visualstudio.com/" target="_blank">
     Acesse nesse link
   </a>
 </p>
